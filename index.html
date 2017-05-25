@@ -8,7 +8,7 @@ country: "us"      # lowercase two-letter ISO country code such as "fr" (see htt
 language: "en"     # lowercase two-letter ISO language code such as "fr" (see https://en.wikipedia.org/wiki/ISO_639-1)
 latlng: "37.2731955,-107.8719393"       # decimal latitude and longitude of workshop venue (e.g., "41.7901128,-87.6007318" - use http://www.latlong.net/)
 humandate: "May 25, 2017"    # human-readable dates for the workshop (e.g., "Feb 17-18, 2020")
-humantime: "9:00AM-12:00PM"    # human-readable times for the workshop (e.g., "9:00 am - 4:30 pm")
+humantime: "10:00AM-12:00PM"    # human-readable times for the workshop (e.g., "9:00 am - 4:30 pm")
 startdate: 2017-05-25      # machine-readable start date for the workshop in YYYY-MM-DD format like 2015-01-01
 enddate: 2017-05-25        # machine-readable end date for the workshop in YYYY-MM-DD format like 2015-01-02
 instructor: ["Joslynn Lee", "Arron Shiffer"] # boxed, comma-separated list of instructors' names as strings, like ["Kay McNulty", "Betty Jennings", "Betty Snyder"]
@@ -60,13 +60,6 @@ and our administrator may contact you if we need any extra information.</h4>
   Edit the general explanatory paragraph below if you want to change
   the pitch.
 -->
-{% if page.carpentry == "swc" %}
-  {% include sc/intro.html %}
-{% elsif page.carpentry == "dc" %}
-  {% include dc/intro.html %}
-{% elsif page.carpentry == "lc" %}
-  {% include lc/intro.html %}
-{% endif %}
 <p>
   Adapted from <a href="https://software-carpentry.org">Software Carpentry</a>
   workshops, SWC aims to help researchers get their work done
@@ -106,7 +99,7 @@ As part of the professional development sessions for students and faculty but mo
   <strong>Who:</strong>
   The course is aimed at students and researchers.
   <strong>You don't need to have any previous knowledge of the tools that will
-    be presented at the workshop.</strong>
+    be presented at the workshop. You can always come back to do this in your free time.</strong>
 </p>
 
 <!--
@@ -230,18 +223,19 @@ As part of the professional development sessions for students and faculty but mo
 <div class="row">
   <div class="col-md-6">
     <table class="table table-striped">
-      <tr> <td>01:00</td>  <td>Welcome and Introduction</td> </tr>
-      <tr> <td>01:15</td>  <td>CyVerse + DNA Subway Overview</td> </tr>
-      <tr> <td>01:30-2:30</td>  <td><a href="http://swcarpentry.github.io/shell-novice/">The Unix Shell</a></td> </tr>
-      <tr> <td>01:30</td>  <td><a href="http://swcarpentry.github.io/shell-novice/01-intro/">Introducing the Shell</a></td> </tr>
-      <tr> <td>01:35</td>  <td><a href="http://swcarpentry.github.io/shell-novice/02-filedir/">Navigating Files and Directories</a></td> </tr>
-      <tr> <td>01:50</td>  <td><a href="http://swcarpentry.github.io/shell-novice/03-create/">Working with Files and Directories</a></td> </tr>
-      <tr> <td>02:05</td>  <td><a href="http://swcarpentry.github.io/shell-novice/04-pipefilter/">Pipes and Filters</a></td> </tr>
-      <tr> <td>02:30</td>  <td>Break</td> </tr>
-      <tr> <td>02:40</td>  <td><a href="http://swcarpentry.github.io/shell-novice/01-intro/">Loops</a></td> </tr>
-      <tr> <td>02:55</td>  <td><a href="http://swcarpentry.github.io/shell-novice/02-filedir/">Shell Scripts</a></td> </tr>
-      <tr> <td>03:00</td> <td><a href="http://swcarpentry.github.io/shell-novice/03-create/">Finding Things</a></td> </tr>    
-      <tr> <td>03:10</td>  <td>Wrap-up</td> </tr>
+      <tr> <td>10:00</td>  <td><a href="https://user.cyverse.org/">CyVerse Overview</a> + Atmosphere Setup</td> </tr>
+<tr> <td>10:15-10:45</td>  <td>Reading a Journal Article (Practice)</td> </tr>
+	    <tr> <td>10:45-11:00</td>  <td>Break</td> </tr>
+	<tr> <td>11:00-12:00</td>  <td><a href="http://swcarpentry.github.io/shell-novice/01-intro/">Introducing the Shell</a></td> </tr>    
+      <tr> <td>11:00</td>  <td><a href="http://swcarpentry.github.io/shell-novice/">The Unix Shell</a></td> </tr>
+<tr> <td>11:10</td>  <td><a href="http://swcarpentry.github.io/shell-novice/01-intro/">Introducing the Shell</a></td> </tr>
+      <tr> <td>11:20</td>  <td><a href="http://swcarpentry.github.io/shell-novice/02-filedir/">Navigating Files and Directories</a></td> </tr>
+        <tr> <td>11:30</td>  <td>Break for freestyle python</td> </tr>
+<tr> <td>On your own</td>  <td><a href="http://swcarpentry.github.io/shell-novice/03-create/">Working with Files and Directories</a></td> </tr>
+      <tr> <td>On your own</td>  <td><a href="http://swcarpentry.github.io/shell-novice/04-pipefilter/">Pipes and Filters</a></td> </tr>
+<tr> <td>On your own</td>  <td><a href="http://swcarpentry.github.io/shell-novice/01-intro/">Loops</a></td> </tr>
+      <tr> <td>On your own</td>  <td><a href="http://swcarpentry.github.io/shell-novice/02-filedir/">Shell Scripts</a></td> </tr>
+      <tr> <td>On your own</td> <td><a href="http://swcarpentry.github.io/shell-novice/03-create/">Finding Things</a></td> </tr>    
     </table>
   </div>
 </div>
